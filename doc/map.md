@@ -76,7 +76,7 @@ Use them to figure out which purpose each of the item types in the `datafile.ite
 
 Things to keep in mind:
 1. When an item type appears in `datafile.item_types`, it means that there must be at least one item of that type
-2. With the exception fo the UUID Index, the first item of an item type will have `id` = 0 and from there it will count up
+2. With the exception of the UUID Index, the first item of an item type will have `id` = 0 and from there it will count up
 
 UUID item types
 ---------------
@@ -390,7 +390,7 @@ item_data extension for tilemap layers:
     - order of flips and rotations: vertical flip -> horizontal flip -> rotation
 
 ```
-'Tile' tile type (consiting of bytes, used by all vanilla layers and the front layer):
+'Tile' tile type (consisting of bytes, used by all vanilla layers and the front layer):
     [1] id
     [1] flags
     [1] skip
@@ -419,7 +419,7 @@ DDNet only content:
 Special tile types:
 
 ```
-'Tele' tile type (consiting of bytes):
+'Tele' tile type (consisting of bytes):
     [1] number
     [1] id
 ```
@@ -427,7 +427,7 @@ Special tile types:
 - `number` is the number of the teleporter exit/entry to group them together
 
 ```
-'Speedup' tile type (consiting of bytes):
+'Speedup' tile type (consisting of bytes):
     [1] force
     [1] max_speed
     [1] id
@@ -438,7 +438,7 @@ Special tile types:
 - angle is LE
 
 ```
-'Switch' tile type (consiting of bytes):
+'Switch' tile type (consisting of bytes):
     [1] number
     [1] id
     [1] flags
@@ -448,7 +448,7 @@ Special tile types:
 - `number` once again tells you which tiles interact with each other
 
 ```
-'Tune' tile type (consiting of bytes):
+'Tune' tile type (consisting of bytes):
     [1] number
     [1] id
 ```
